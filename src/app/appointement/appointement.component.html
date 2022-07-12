@@ -1,0 +1,29 @@
+<table style="max-width: 70%;">
+    <thead>
+        <tr>
+            
+            <th>id_rdv</th>
+            <th>id_personne</th>
+            <th>id_fauteuil</th>
+            <th>rdvDate</th>
+            <th>rdvDuree</th>
+            <th>rdvArrivee</th>
+            <th>rdvComm</th>
+           
+            <th>localisation</th> 
+        </tr>
+    </thead>
+    <tbody *ngFor="let m of Appointement ">
+        <tr>
+            <td style="width: 14%;">{{m.id_rdv}}</td>
+            <td style="width: 14%;">{{m.id_personne}}</td>
+            <td style="width: 14%;">{{m.id_fauteuil}}</td>
+            <td style="width: 14%;">{{m.rdvDate}}</td>
+            <td style="width: 14%;">{{m.rdvDuree}}</td>
+            <td style="width: 14%;">{{m.rdvArrivee}}</td>
+            <td style="width: 14%;">{{m.rdvComm}}</td>
+            
+            <td>{{m.localisation}}</td>            
+        </tr>
+    </tbody>
+</table>
