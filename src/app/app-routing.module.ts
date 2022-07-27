@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { AppointementComponent } from './appointement/appointement.component';
+import { CalendarComponent } from './appointement/calendar/calendar.component';
 import { GetRdvByidComponent } from './appointement/get-rdv-byid/get-rdv-byid.component';
+import { RdvDateComponent } from './appointement/rdv-date/rdv-date.component';
 import { CliniqueFComponent } from './clinique-f/clinique-f.component';
 import { CliniquesComponent } from './cliniques/cliniques.component';
 import { SuisseOrFranceComponent } from './suisse-or-france/suisse-or-france.component';
@@ -13,7 +15,8 @@ const routes: Routes = [
   { path: "cliniquesSuisse", component:CliniquesComponent},
   { path: "cliniquesFrance", component:CliniqueFComponent},
   { path: "choice", component:SuisseOrFranceComponent},
-
+  { path: "rdvdate", component:RdvDateComponent},
+  { path: "calendar", component:CalendarComponent},
 
 
   //Admin pour consulter les render-vous
@@ -26,5 +29,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
+
  }

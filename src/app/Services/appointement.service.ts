@@ -23,13 +23,16 @@ export class AppointementService {
 
   //Retourne la liste des rendez-vous ainsi des zones restraintes entre deux dates précises
   getAppointementByDateData(date1:Date , date2:Date) {
-    return this.http.get(this.apiUrl + 'AppointementByDateData/' + date1 +'&' + date2 );
+
+   // console.log(datedebut,datefin);
+
+    return this.http.get(this.apiUrl + 'AppointementByDateData/' + date1 + '&'+ date2 );
   }
 
   //Permet d'insérer un nouveau rendez-vous dans la base de donnée
   InsertNextRDV(Appointement:Appointement):Observable<Appointement[]> {
-    return this.http.post<Appointement[]>(this.apiUrl + 'Appointement/InsertNextRDV' ,Appointement);       
+    return this.http.post<Appointement[]>(this.apiUrl + 'Appointement/InsertNextRDV' ,Appointement);
   }
-  
+
 
 }

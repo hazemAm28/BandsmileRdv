@@ -11,6 +11,11 @@ import { AddnextRdvComponent } from './appointement/addnext-rdv/addnext-rdv.comp
 import { SuisseOrFranceComponent } from './suisse-or-france/suisse-or-france.component';
 import { CliniqueFComponent } from './clinique-f/clinique-f.component';
 import { AdminComponent } from './admin/admin.component';
+import { RdvDateComponent } from './appointement/rdv-date/rdv-date.component';
+import { CalendarComponent } from './appointement/calendar/calendar.component';
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -23,16 +28,21 @@ import { AdminComponent } from './admin/admin.component';
     AddnextRdvComponent,
     SuisseOrFranceComponent,
     CliniqueFComponent,
-    AdminComponent
+    AdminComponent,
+    RdvDateComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    
-    
-    
-    
+    CalendarModule,
+    BrowserAnimationsModule,
+    MatIconModule
+
+
+
+
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]
