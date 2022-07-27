@@ -17,6 +17,8 @@ export class RdvDateComponent implements OnInit {
   datedebut!:Date;
   datefin!:Date;
   ngOnInit(): void {
+    console.log("bonjour");
+    
       let dateDebut = formatDate(new Date(Date.now()), "yyyy-MM-dd HH:mm:ss", 'en-US');
       let dateDebutDuJour = dateDebut.substring(0, 10) + " 00:00:00";
       let dateFinDuJour = dateDebut.substring(0, 10) + " 23:59:00";

@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { AddrdvComponent } from './appointement/addrdv/addrdv.component';
 import { FormsModule } from '@angular/forms';
+import { AuthInterceptorInterceptor } from './auth-interceptor.interceptor';
 
 
 
@@ -48,7 +49,11 @@ import { FormsModule } from '@angular/forms';
 
 
   ],
-  providers: [DatePipe],
+  providers: [DatePipe, {
+    provide : HTTP_INTERCEPTORS,
+    useClass: AuthInterceptorInterceptor,
+    multi   : true,
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
