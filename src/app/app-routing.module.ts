@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { AddrdvComponent } from './appointement/addrdv/addrdv.component';
 import { AppointementComponent } from './appointement/appointement.component';
 import { CalendarComponent } from './appointement/calendar/calendar.component';
 import { GetRdvByidComponent } from './appointement/get-rdv-byid/get-rdv-byid.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: "choice", component:SuisseOrFranceComponent},
   { path: "rdvdate", component:RdvDateComponent},
   { path: "calendar", component:CalendarComponent},
+  { path: "add", component:AddrdvComponent},
 
 
   //Admin pour consulter les render-vous

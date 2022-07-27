@@ -16,6 +16,8 @@ import { CalendarComponent } from './appointement/calendar/calendar.component';
 import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { AddrdvComponent } from './appointement/addrdv/addrdv.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -30,7 +32,8 @@ import {MatIconModule} from '@angular/material/icon';
     CliniqueFComponent,
     AdminComponent,
     RdvDateComponent,
-    CalendarComponent
+    CalendarComponent,
+    AddrdvComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {MatIconModule} from '@angular/material/icon';
     HttpClientModule,
     CalendarModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
 
 
 
